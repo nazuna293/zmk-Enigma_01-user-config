@@ -1,0 +1,6 @@
+name: Build ZMK firmware
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  build:
+    uses: nazuna293/zmk-config-Enigma_01/.github/workflows/build.yml@main
