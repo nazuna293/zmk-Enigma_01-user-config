@@ -1,0 +1,11 @@
+manifest:
+  remotes:
+    - name: nazuna293
+      url-base: https://github.com/nazuna293
+  projects:
+    - name: zmk-config-Enigma_01
+      remote: nazuna293
+      revision: main
+      import: config/west.yml
+  self:
+    path: config
