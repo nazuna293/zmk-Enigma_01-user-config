@@ -1,1 +1,1 @@
-![](https://raw.githubusercontent.com/nazuna293/zmk-Enigma_01-user-template/main/keymap-drawer/Enigma_01_a.svg)
+![](https://raw.githubusercontent.com/nazuna293/zmk-Enigma_01-user-config/main/keymap-drawer/Enigma_01_a.svg)
