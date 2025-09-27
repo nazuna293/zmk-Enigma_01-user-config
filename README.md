@@ -1,5 +1,3 @@
-# zmk-Enigma_01-config-template
-
 # Enigma_01 ビルドガイド  
 
 ここではキーマップ編集の手順を説明します。総合案内は[こちら](https://github.com/nazuna293/Enigma_01)です。
