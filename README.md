@@ -1,6 +1,7 @@
 # Enigma_01 ビルドガイド  
 
-ここではキーマップ編集の手順を説明します。総合案内は[こちら](https://github.com/nazuna293/Enigma_01)です。
+ここではキーマップ編集の手順を説明します。  
+総合案内は[こちら](https://github.com/nazuna293/Enigma_01)です。
 
 ## キーマップ編集  
 
@@ -24,6 +25,6 @@
 |tp3|半／全|layer to_ALT|||
 |tp4|F7|layer to_ALT|F8||
 
-※to_ALTレイヤーに推移している間はALTキーが押されている状態になっています。
+※レイヤー4に推移している間はALTキーが押されている状態になっています。
 
 ![](keymap-drawer/Enigma_01_a.svg)
