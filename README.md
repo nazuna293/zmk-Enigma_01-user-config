@@ -5,7 +5,7 @@
 
 ## キーマップ編集  
 
-2つの方法を案内します。
+2つの方法を案内します。  
 複雑な編集はKeymapEditorが適していますが、初めての編集はZMK Studioがおすすめです。  
 
 |項目|KeymapEditor<br>[編集手順](docs/KeymapEditor.md)|ZMK Studio<br>[編集手順](docs/ZMK_Studio.md)|  
