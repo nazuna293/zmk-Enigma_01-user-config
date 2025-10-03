@@ -3,21 +3,21 @@
 ファームウェアはGitHub Actionsで書き出します。  
 1. GitHubアカウントを持っていない場合は、事前に[アカウント登録](https://github.com/signup)をしてください。  
 2. 準備が出来たらこのリポジトリを[フォーク](https://github.com/nazuna293/zmk-Enigma_01-user-config/fork)します。  
-<img src="img/FORK_01.jpg">
-<img src="img/FORK_02.jpg">
-<img src="img/FORK_03.jpg">
-<img src="img/FORK_04.jpg">
+<img src="img/FORK_01.jpg" alt="製品画像" style="width: 100%; max-width: 600px; height: auto;">
+<img src="img/FORK_02.jpg" alt="製品画像" style="width: 100%; max-width: 600px; height: auto;">
+<img src="img/FORK_03.jpg" alt="製品画像" style="width: 100%; max-width: 600px; height: auto;">
+<img src="img/FORK_04.jpg" alt="製品画像" style="width: 100%; max-width: 600px; height: auto;">
 
 ## KeymapEditorと連携
 キーマップはブラウザ上で編集します。
 1. [KeymapEditor](https://nickcoutsos.github.io/keymap-editor/)にGitHubアカウントを連携させます。  
-<img src="img/KE_01.jpg">
-<img src="img/KE_02.jpg">
-<img src="img/KE_03.jpg">
-<img src="img/KE_04.jpg">
-<img src="img/KE_05.jpg">
+<img src="img/KE_01.jpg" alt="製品画像" style="width: 100%; max-width: 600px; height: auto;">
+<img src="img/KE_02.jpg" alt="製品画像" style="width: 100%; max-width: 600px; height: auto;">
+<img src="img/KE_03.jpg" alt="製品画像" style="width: 100%; max-width: 600px; height: auto;">
+<img src="img/KE_04.jpg" alt="製品画像" style="width: 100%; max-width: 600px; height: auto;">
+<img src="img/KE_05.jpg" alt="製品画像" style="width: 100%; max-width: 600px; height: auto;">
 2. zmk-config-Enigma_01を連携させます。  
-<img src="img/KE_06.jpg">
+<img src="img/KE_06.jpg" alt="製品画像" style="width: 100%; max-width: 600px; height: auto;">
 3. 該当するKeyboard（配列）を選択します。  
 
 |Keyboard|配列|  
@@ -25,21 +25,21 @@
 |Enigma_01_a|1.0u配列|  
 |Enigma_01_b|1.5u配列|  
 |Enigma_01_c|2.0u配列|  
-<img src="img/KE_08.jpg">
+<img src="img/KE_08.jpg" alt="製品画像" style="width: 100%; max-width: 600px; height: auto;">
 
 4. キーマップを編集します。  
 [Behaviors](https://zmk.dev/docs/keymaps/behaviors)や[Keycodes](https://zmk.dev/docs/keymaps/list-of-keycodes)等のドキュメントに詳細が載っています。  
-<img src="img/KE_07.jpg">
+<img src="img/KE_07.jpg" alt="製品画像" style="width: 100%; max-width: 600px; height: auto;">
 
 5. キーマップを保存します。
-<img src="img/KE_09.jpg">
-<img src="img/KE_10.jpg">
+<img src="img/KE_09.jpg" alt="製品画像" style="width: 100%; max-width: 600px; height: auto;">
+<img src="img/KE_10.jpg" alt="製品画像" style="width: 100%; max-width: 600px; height: auto;">
 
 ## ファームウェアをEnigma_01へ
 以下の手順で転送します。
 1. GitHub Actionsからファームウェアをダウンロード、解凍します。
-<img src="img/KE_11.jpg">
-<img src="img/KE_12.jpg">
+<img src="img/KE_11.jpg" alt="製品画像" style="width: 100%; max-width: 600px; height: auto;">
+<img src="img/KE_12.jpg" alt="製品画像" style="width: 100%; max-width: 600px; height: auto;">
 
 2. Enigma_01とパソコンをUSB-Cケーブルで接続します。
 
@@ -54,7 +54,7 @@
 |Enigma_01 layout_a|1.0u配列|  
 |Enigma_01 layout_b|1.5u配列|  
 |Enigma_01 layout_c|2.0u配列|  
-<img src="img/KE_13.jpg">
+<img src="img/KE_13.jpg" alt="製品画像" style="width: 100%; max-width: 600px; height: auto;">
 
 ## デバイスと再接続  
 ### 有線接続の場合  
