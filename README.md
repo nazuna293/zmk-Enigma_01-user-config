@@ -27,4 +27,4 @@
 
 ※レイヤー4に推移している間はALTキーが押されている状態になっています。
 
-![](keymap-drawer/Enigma_01_a.svg)
+![](https://raw.githubusercontent.com/nazuna293/zmk-keyboard-Enigma_01/main/keymap-drawer/Enigma_01_a.svg)
