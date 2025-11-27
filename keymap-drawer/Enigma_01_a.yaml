@@ -22,7 +22,7 @@ layers:
   - J
   - K
   - L
-  - '-'
+  - ''
   - Z
   - X
   - C
@@ -32,7 +32,7 @@ layers:
   - M
   - ','
   - .
-  - /
+  - ''
   - '&tp2'
   - LEFT WIN
   - LEFT ALT
@@ -40,9 +40,52 @@ layers:
   - BACKSPACE
   - DEL
   - {t: ENTER, h: Shift+_Mouse_}
-  - RALT
-  - '&tp2'
-  - Sft+INTERNATIONAL 1
+  - '&sl_left'
+  - '&sl_down'
+  - '&sl_right'
+  '5':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&sl_up'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&sl_left'
+  - '&sl_down'
+  - '&sl_right'
   Ctrl+_Num_:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -177,3 +220,5 @@ layers:
 combos:
 - p: [36, 35]
   k: setting
+- p: [10, 11]
+  k: '-'
