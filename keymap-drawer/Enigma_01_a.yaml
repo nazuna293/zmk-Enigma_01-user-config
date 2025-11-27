@@ -22,7 +22,7 @@ layers:
   - J
   - K
   - L
-  - ''
+  - '&tp5'
   - Z
   - X
   - C
@@ -32,8 +32,8 @@ layers:
   - M
   - ','
   - .
-  - ''
-  - LCTRL
+  - /
+  - LEFT SHIFT
   - LEFT WIN
   - LEFT ALT
   - {t: SPACE, h: Ctrl+_Num_}
@@ -43,7 +43,7 @@ layers:
   - '&sl_left'
   - '&sl_down'
   - '&sl_right'
-  '5':
+  Arrow:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -222,8 +222,6 @@ combos:
   k: setting
 - p: [10, 11]
   k: '-'
-- p: [22, 32]
-  k: LEFT SHIFT
 - p: [31, 41]
   k: RIGHT SHIFT
 - p: [13, 14]
@@ -234,3 +232,5 @@ combos:
   k: Ctl+X
 - p: [12, 13]
   k: Ctl+A
+- p: [31, 30]
+  k: INTERNATIONAL 1
