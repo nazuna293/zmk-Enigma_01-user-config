@@ -201,6 +201,11 @@
             key-positions = <36 35>;
         };
 
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+        };
+
         hyphen {
             bindings = <&kp MINUS>;
             key-positions = <10 11>;
