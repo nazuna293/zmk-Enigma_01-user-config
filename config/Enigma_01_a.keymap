@@ -209,6 +209,7 @@
         hyphen {
             bindings = <&kp MINUS>;
             key-positions = <10 11>;
+            layers = <0 1 2>;
         };
 
         RSft {
@@ -219,26 +220,37 @@
         copy {
             bindings = <&kp LC(C)>;
             key-positions = <13 14>;
+            layers = <0 1 2>;
         };
 
         paste {
             bindings = <&kp LC(V)>;
             key-positions = <15 14>;
+            layers = <0 1 2>;
         };
 
         cut {
             bindings = <&kp LC(X)>;
             key-positions = <13 15>;
+            layers = <0 1 2>;
         };
 
         select {
             bindings = <&kp LC(A)>;
             key-positions = <12 13>;
+            layers = <0 1 2>;
         };
 
         ro {
             bindings = <&kp INTERNATIONAL_1>;
             key-positions = <31 30>;
+            layers = <0 1>;
+        };
+
+        atsign {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <20 21>;
+            layers = <0 1>;
         };
     };
 
