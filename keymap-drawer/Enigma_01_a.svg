@@ -255,7 +255,7 @@ path.combo {
 </g>
 <g transform="translate(28, 252)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">&amp;tp2</text>
+<text x="0" y="0" class="key tap">LCTRL</text>
 </g>
 <g transform="translate(84, 252)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -309,6 +309,36 @@ path.combo {
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="490" y="71" width="28" height="26" class="combo"/>
 <text x="504" y="84" class="combo tap">-</text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="14" y="211" width="28" height="26" class="combo"/>
+<text x="28" y="224" class="combo tap">
+<tspan x="28" dy="-0.6em">LEFT</tspan><tspan x="28" dy="1.2em">SHIFT</tspan>
+</text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="518" y="211" width="28" height="26" class="combo"/>
+<text x="532" y="224" class="combo tap">
+<tspan x="532" dy="-0.6em">RIGHT</tspan><tspan x="532" dy="1.2em">SHIFT</tspan>
+</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="98" y="127" width="28" height="26" class="combo"/>
+<text x="112" y="140" class="combo tap">Ctl+C</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="154" y="127" width="28" height="26" class="combo"/>
+<text x="168" y="140" class="combo tap">Ctl+V</text>
+</g>
+<g class="combo combopos-6">
+<path d="M140,140 l-37,0" class="combo"/>
+<path d="M140,140 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="126" y="127" width="28" height="26" class="combo"/>
+<text x="140" y="140" class="combo tap">Ctl+X</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="42" y="127" width="28" height="26" class="combo"/>
+<text x="56" y="140" class="combo tap">Ctl+A</text>
 </g>
 </g>
 </g>
@@ -491,6 +521,36 @@ path.combo {
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="490" y="71" width="28" height="26" class="combo"/>
 <text x="504" y="84" class="combo tap">-</text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="14" y="211" width="28" height="26" class="combo"/>
+<text x="28" y="224" class="combo tap">
+<tspan x="28" dy="-0.6em">LEFT</tspan><tspan x="28" dy="1.2em">SHIFT</tspan>
+</text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="518" y="211" width="28" height="26" class="combo"/>
+<text x="532" y="224" class="combo tap">
+<tspan x="532" dy="-0.6em">RIGHT</tspan><tspan x="532" dy="1.2em">SHIFT</tspan>
+</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="98" y="127" width="28" height="26" class="combo"/>
+<text x="112" y="140" class="combo tap">Ctl+C</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="154" y="127" width="28" height="26" class="combo"/>
+<text x="168" y="140" class="combo tap">Ctl+V</text>
+</g>
+<g class="combo combopos-6">
+<path d="M140,140 l-37,0" class="combo"/>
+<path d="M140,140 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="126" y="127" width="28" height="26" class="combo"/>
+<text x="140" y="140" class="combo tap">Ctl+X</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="42" y="127" width="28" height="26" class="combo"/>
+<text x="56" y="140" class="combo tap">Ctl+A</text>
 </g>
 </g>
 </g>
@@ -699,6 +759,36 @@ path.combo {
 <rect rx="6" ry="6" x="490" y="71" width="28" height="26" class="combo"/>
 <text x="504" y="84" class="combo tap">-</text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="14" y="211" width="28" height="26" class="combo"/>
+<text x="28" y="224" class="combo tap">
+<tspan x="28" dy="-0.6em">LEFT</tspan><tspan x="28" dy="1.2em">SHIFT</tspan>
+</text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="518" y="211" width="28" height="26" class="combo"/>
+<text x="532" y="224" class="combo tap">
+<tspan x="532" dy="-0.6em">RIGHT</tspan><tspan x="532" dy="1.2em">SHIFT</tspan>
+</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="98" y="127" width="28" height="26" class="combo"/>
+<text x="112" y="140" class="combo tap">Ctl+C</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="154" y="127" width="28" height="26" class="combo"/>
+<text x="168" y="140" class="combo tap">Ctl+V</text>
+</g>
+<g class="combo combopos-6">
+<path d="M140,140 l-37,0" class="combo"/>
+<path d="M140,140 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="126" y="127" width="28" height="26" class="combo"/>
+<text x="140" y="140" class="combo tap">Ctl+X</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="42" y="127" width="28" height="26" class="combo"/>
+<text x="56" y="140" class="combo tap">Ctl+A</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1008)" class="layer-Shift+_Mouse_">
@@ -887,6 +977,36 @@ path.combo {
 <rect rx="6" ry="6" x="490" y="71" width="28" height="26" class="combo"/>
 <text x="504" y="84" class="combo tap">-</text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="14" y="211" width="28" height="26" class="combo"/>
+<text x="28" y="224" class="combo tap">
+<tspan x="28" dy="-0.6em">LEFT</tspan><tspan x="28" dy="1.2em">SHIFT</tspan>
+</text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="518" y="211" width="28" height="26" class="combo"/>
+<text x="532" y="224" class="combo tap">
+<tspan x="532" dy="-0.6em">RIGHT</tspan><tspan x="532" dy="1.2em">SHIFT</tspan>
+</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="98" y="127" width="28" height="26" class="combo"/>
+<text x="112" y="140" class="combo tap">Ctl+C</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="154" y="127" width="28" height="26" class="combo"/>
+<text x="168" y="140" class="combo tap">Ctl+V</text>
+</g>
+<g class="combo combopos-6">
+<path d="M140,140 l-37,0" class="combo"/>
+<path d="M140,140 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="126" y="127" width="28" height="26" class="combo"/>
+<text x="140" y="140" class="combo tap">Ctl+X</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="42" y="127" width="28" height="26" class="combo"/>
+<text x="56" y="140" class="combo tap">Ctl+A</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1344)" class="layer-setting">
@@ -1044,6 +1164,36 @@ path.combo {
 <rect rx="6" ry="6" x="490" y="71" width="28" height="26" class="combo"/>
 <text x="504" y="84" class="combo tap">-</text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="14" y="211" width="28" height="26" class="combo"/>
+<text x="28" y="224" class="combo tap">
+<tspan x="28" dy="-0.6em">LEFT</tspan><tspan x="28" dy="1.2em">SHIFT</tspan>
+</text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="518" y="211" width="28" height="26" class="combo"/>
+<text x="532" y="224" class="combo tap">
+<tspan x="532" dy="-0.6em">RIGHT</tspan><tspan x="532" dy="1.2em">SHIFT</tspan>
+</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="98" y="127" width="28" height="26" class="combo"/>
+<text x="112" y="140" class="combo tap">Ctl+C</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="154" y="127" width="28" height="26" class="combo"/>
+<text x="168" y="140" class="combo tap">Ctl+V</text>
+</g>
+<g class="combo combopos-6">
+<path d="M140,140 l-37,0" class="combo"/>
+<path d="M140,140 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="126" y="127" width="28" height="26" class="combo"/>
+<text x="140" y="140" class="combo tap">Ctl+X</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="42" y="127" width="28" height="26" class="combo"/>
+<text x="56" y="140" class="combo tap">Ctl+A</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1680)" class="layer-to_ALT">
@@ -1196,6 +1346,36 @@ path.combo {
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="490" y="71" width="28" height="26" class="combo"/>
 <text x="504" y="84" class="combo tap">-</text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="14" y="211" width="28" height="26" class="combo"/>
+<text x="28" y="224" class="combo tap">
+<tspan x="28" dy="-0.6em">LEFT</tspan><tspan x="28" dy="1.2em">SHIFT</tspan>
+</text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="518" y="211" width="28" height="26" class="combo"/>
+<text x="532" y="224" class="combo tap">
+<tspan x="532" dy="-0.6em">RIGHT</tspan><tspan x="532" dy="1.2em">SHIFT</tspan>
+</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="98" y="127" width="28" height="26" class="combo"/>
+<text x="112" y="140" class="combo tap">Ctl+C</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="154" y="127" width="28" height="26" class="combo"/>
+<text x="168" y="140" class="combo tap">Ctl+V</text>
+</g>
+<g class="combo combopos-6">
+<path d="M140,140 l-37,0" class="combo"/>
+<path d="M140,140 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="126" y="127" width="28" height="26" class="combo"/>
+<text x="140" y="140" class="combo tap">Ctl+X</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="42" y="127" width="28" height="26" class="combo"/>
+<text x="56" y="140" class="combo tap">Ctl+A</text>
 </g>
 </g>
 </g>

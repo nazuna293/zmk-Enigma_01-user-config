@@ -33,7 +33,7 @@ layers:
   - ','
   - .
   - ''
-  - '&tp2'
+  - LCTRL
   - LEFT WIN
   - LEFT ALT
   - {t: SPACE, h: Ctrl+_Num_}
@@ -222,3 +222,15 @@ combos:
   k: setting
 - p: [10, 11]
   k: '-'
+- p: [22, 32]
+  k: LEFT SHIFT
+- p: [31, 41]
+  k: RIGHT SHIFT
+- p: [13, 14]
+  k: Ctl+C
+- p: [15, 14]
+  k: Ctl+V
+- p: [13, 15]
+  k: Ctl+X
+- p: [12, 13]
+  k: Ctl+A
