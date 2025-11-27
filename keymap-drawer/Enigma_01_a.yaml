@@ -2,7 +2,7 @@ layout: {zmk_keyboard: Enigma_01_a}
 layers:
   Default_JIS:
   - '&tp2'
-  - '&tp2'
+  - '&tp3'
   - '&tp1'
   - W
   - E
