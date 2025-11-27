@@ -224,15 +224,24 @@ combos:
   k: ESC
 - p: [10, 11]
   k: '-'
+  l: [Default_JIS, Arrow, Ctrl+_Num_]
 - p: [31, 41]
   k: RIGHT SHIFT
 - p: [13, 14]
   k: Ctl+C
+  l: [Default_JIS, Arrow, Ctrl+_Num_]
 - p: [15, 14]
   k: Ctl+V
+  l: [Default_JIS, Arrow, Ctrl+_Num_]
 - p: [13, 15]
   k: Ctl+X
+  l: [Default_JIS, Arrow, Ctrl+_Num_]
 - p: [12, 13]
   k: Ctl+A
+  l: [Default_JIS, Arrow, Ctrl+_Num_]
 - p: [31, 30]
   k: INTERNATIONAL 1
+  l: [Default_JIS, Arrow]
+- p: [20, 21]
+  k: '@'
+  l: [Default_JIS, Arrow]
