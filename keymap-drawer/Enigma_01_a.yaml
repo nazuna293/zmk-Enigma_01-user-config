@@ -220,6 +220,8 @@ layers:
 combos:
 - p: [36, 35]
   k: setting
+- p: [0, 1]
+  k: ESC
 - p: [10, 11]
   k: '-'
 - p: [31, 41]
