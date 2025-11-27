@@ -205,6 +205,36 @@
             bindings = <&kp MINUS>;
             key-positions = <10 11>;
         };
+
+        LSft {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <22 32>;
+        };
+
+        RSft {
+            bindings = <&kp RIGHT_SHIFT>;
+            key-positions = <31 41>;
+        };
+
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <13 14>;
+        };
+
+        paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <15 14>;
+        };
+
+        cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <13 15>;
+        };
+
+        select {
+            bindings = <&kp LC(A)>;
+            key-positions = <12 13>;
+        };
     };
 
     keymap {
@@ -212,11 +242,11 @@
 
         Default_JIS {
             bindings = <
-       &tp3          &tp4
-&tp1   &kp W         &kp E         &kp R        &kp T          &kp Y    &kp U        &kp I      &kp O     &kp P
-&kp A  &kp S         &kp D         &kp F        &kp G          &kp H    &kp J        &kp K      &kp L     &none
-&kp Z  &kp X         &kp C         &kp V        &kp B          &kp N    &kp M        &kp COMMA  &kp DOT   &none
-&tp2   &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 SPACE  &kp BACKSPACE  &kp DEL  &lt 3 ENTER  &sl_left   &sl_down  &sl_right
+           &tp3          &tp4
+&tp1       &kp W         &kp E         &kp R        &kp T          &kp Y    &kp U        &kp I      &kp O     &kp P
+&kp A      &kp S         &kp D         &kp F        &kp G          &kp H    &kp J        &kp K      &kp L     &none
+&kp Z      &kp X         &kp C         &kp V        &kp B          &kp N    &kp M        &kp COMMA  &kp DOT   &none
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 SPACE  &kp BACKSPACE  &kp DEL  &lt 3 ENTER  &sl_left   &sl_down  &sl_right
             >;
 
             sensor-bindings = <&scroll_up_down>;
