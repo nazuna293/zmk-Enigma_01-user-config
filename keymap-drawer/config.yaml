@@ -1,0 +1,127 @@
+parse_config:
+  raw_binding_map:
+    '&sys_reset': Reset
+    '&bootloader': Boot
+
+    '&bt BT_SEL 0': BT 1
+    '&bt BT_SEL 1': BT 2
+    '&bt BT_SEL 2': BT 3
+    '&bt BT_SEL 3': BT 4
+    '&bt BT_SEL 4': BT 5
+
+  zmk_combos:
+    esc:     {align: left}
+    lt_f2:     {align: top}
+    cut:       {align: top}
+
+  zmk_keycode_map:
+    # custom mappings
+    LCTRL: Ctl
+    RCTRL: Ctl
+    LALT: Alt
+    RALT: Alt
+    LGUI: Gui
+    RGUI: Gui
+    LSHFT: Sft
+    RSHFT: Sft
+    BSPC: BS
+
+    PAGE_UP: PgUp
+    PAGE_DOWN: PgDn
+    PG_UP: PgUp
+    PG_DN: PgDn
+    INS: Insert
+    CAPS: Caps
+    PRINTSCREEN: Prt Scn
+    PSCRN: Prt Scn
+
+    UP: ↑
+    DOWN: ↓
+    LEFT: ←
+    RIGHT: →
+
+    # defaults
+    AMPERSAND: '&'
+    AMPS: '&'
+    APOS: "'"
+    APOSTROPHE: "'"
+    ASTERISK: '*'
+    ASTRK: '*'
+    AT: '@'
+    AT_SIGN: '@'
+    BACKSLASH: \
+    BACKSPACE: 'BS'
+    BSLH: \
+    CARET: ^
+    COLON: ':'
+    COMMA: ','
+    DELETE: 'Del'
+    DLLR: $
+    DOLLAR: $
+    DOT: .
+    DOUBLE_QUOTES: '"'
+    DQT: '"'
+    EQUAL: '='
+    EXCL: '!'
+    EXCLAMATION: '!'
+    FSLH: /
+    GRAVE: '`'
+    GREATER_THAN: '>'
+    GT: '>'
+    HASH: '#'
+    KP_ASTERISK: '*'
+    KP_DOT: .
+    KP_N0: '0'
+    KP_N1: '1'
+    KP_N2: '2'
+    KP_N3: '3'
+    KP_N4: '4'
+    KP_N5: '5'
+    KP_N6: '6'
+    KP_N7: '7'
+    KP_N8: '8'
+    KP_N9: '9'
+    KP_MINUS: '-'
+    KP_PLUS: +
+    KP_SLASH: /
+    LBKT: '['
+    LBRC: '{'
+    LEFT_BRACE: '{'
+    LEFT_BRACKET: '['
+    LEFT_PARENTHESIS: (
+    LESS_THAN: <
+    LPAR: (
+    LT: <
+    MINUS: '-'
+    NON_US_BACKSLASH: \
+    NON_US_BSLH: '|'
+    NON_US_HASH: '#'
+    NUHS: '#'
+    PERCENT: '%'
+    PERIOD: .
+    PIPE: '|'
+    PIPE2: '|'
+    PLUS: +
+    POUND: '#'
+    PRCNT: '%'
+    QMARK: '?'
+    QUESTION: '?'
+    RBKT: ']'
+    RBRC: '}'
+    RIGHT_BRACE: '}'
+    RIGHT_BRACKET: ']'
+    RIGHT_PARENTHESIS: )
+    RPAR: )
+    SEMI: ;
+    SEMICOLON: ;
+    SINGLE_QUOTE: ''''
+    SLASH: /
+    SQT: ''''
+    STAR: '*'
+    TILDE: '~'
+    TILDE2: '~'
+    UNDER: _
+    UNDERSCORE: _
+
+draw_config:
+  footer_text: 'Enigma_01 KEYMAPS | Created with keymap-drawer' 
