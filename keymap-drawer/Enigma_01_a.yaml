@@ -37,7 +37,7 @@ layers:
   - LEFT WIN
   - LEFT ALT
   - {t: SPACE, h: Ctrl+_Num_}
-  - BACKSPACE
+  - BS
   - DEL
   - {t: ENTER, h: Shift+_Mouse_}
   - '&sl_left'
@@ -97,8 +97,8 @@ layers:
   - KP 7
   - KP 8
   - KP 9
-  - KP MINUS
-  - PRINTSCREEN
+  - '-'
+  - Prt Scn
   - Ctl+A
   - Ctl+S
   - Ctl+D
@@ -107,8 +107,8 @@ layers:
   - KP 4
   - KP 5
   - KP 6
-  - KP PLUS
-  - DELETE
+  - +
+  - Del
   - Ctl+Z
   - Ctl+X
   - Ctl+C
@@ -118,7 +118,7 @@ layers:
   - KP 2
   - KP 3
   - UP ARROW
-  - KP DOT
+  - .
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -126,7 +126,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT
+  - ←
   - DOWN ARROW
   - RIGHT ARROW
   Shift+_Mouse_:
@@ -175,11 +175,11 @@ layers:
   setting:
   - BT CLR
   - BT CLR ALL
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT 5
   - ''
   - ''
   - ''
@@ -205,8 +205,8 @@ layers:
   - ''
   - ''
   - ''
-  - '&bootloader'
-  - '&sys_reset'
+  - Boot
+  - Reset
   - ''
   - {type: held}
   - {type: held}
@@ -215,13 +215,14 @@ layers:
   - ''
   - ''
   - ''
-  to_ALT: [Sft+TAB, TAB, '', '', '', F4, '', '', '', '', PAGE UP, '', '', '', '', '', '', '', '', '', PAGE DOWN, '', '', '', '', '', '', '', '', '', UP, '', '', '',
-    '', '', '', '', '', LEFT, DOWN, RIGHT]
+  to_ALT: [Sft+TAB, TAB, '', '', '', F4, '', '', '', '', PgUp, '', '', '', '', '', '', '', '', '', PgDn, '', '', '', '', '', '', '', '', '', ↑, '', '', '', '', '',
+    '', '', '', ←, ↓, →]
 combos:
 - p: [36, 35]
   k: setting
 - p: [0, 2]
   k: ESC
+  a: left
 - p: [10, 11]
   k: '-'
   l: [Default_JIS, Arrow]
@@ -236,6 +237,7 @@ combos:
 - p: [13, 15]
   k: Ctl+X
   l: [Default_JIS, Arrow, Ctrl+_Num_]
+  a: top
 - p: [12, 13]
   k: Ctl+A
   l: [Default_JIS, Arrow, Ctrl+_Num_]
@@ -249,14 +251,14 @@ combos:
   k: F2
   l: [Default_JIS, Ctrl+_Num_, Arrow, Shift+_Mouse_]
 - p: [10, 11]
-  k: KP MINUS
+  k: '-'
   l: [Ctrl+_Num_]
 - p: [20, 21]
-  k: KP PLUS
+  k: +
   l: [Ctrl+_Num_]
 - p: [8, 9]
-  k: KP SLASH
+  k: /
   l: [Ctrl+_Num_]
 - p: [9, 10]
-  k: KP ASTERISK
+  k: '*'
   l: [Ctrl+_Num_]

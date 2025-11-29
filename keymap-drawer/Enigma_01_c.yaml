@@ -37,9 +37,9 @@ layers:
   - LEFT WIN
   - LEFT ALT
   - {t: SPACE, h: Ctrl+_Num_}
-  - BACKSPACE
+  - BS
   - {t: ENTER, h: Shift+_Mouse_}
-  - RALT
+  - Alt
   - '&tp2'
   - Sft+INTERNATIONAL 1
   Ctrl+_Num_:
@@ -53,8 +53,8 @@ layers:
   - KP 7
   - KP 8
   - KP 9
-  - KP MINUS
-  - PRINTSCREEN
+  - '-'
+  - Prt Scn
   - Ctl+A
   - Ctl+S
   - Ctl+D
@@ -63,8 +63,8 @@ layers:
   - KP 4
   - KP 5
   - KP 6
-  - KP PLUS
-  - DELETE
+  - +
+  - Del
   - Ctl+Z
   - Ctl+X
   - Ctl+C
@@ -74,14 +74,14 @@ layers:
   - KP 2
   - KP 3
   - UP ARROW
-  - KP DOT
+  - .
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT
+  - ←
   - DOWN ARROW
   - RIGHT ARROW
   Shift+_Mouse_:
@@ -129,11 +129,11 @@ layers:
   setting:
   - BT CLR
   - BT CLR ALL
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT 5
   - ''
   - ''
   - ''
@@ -159,7 +159,7 @@ layers:
   - ''
   - ''
   - ''
-  - '&bootloader'
+  - Boot
   - ''
   - ''
   - {type: held}
@@ -168,8 +168,8 @@ layers:
   - ''
   - ''
   - ''
-  to_ALT: [Sft+TAB, TAB, '', '', '', F4, '', '', '', '', PAGE UP, '', '', '', '', '', '', '', '', '', PAGE DOWN, '', '', '', '', '', '', '', '', '', UP, '', '', '',
-    '', '', '', '', LEFT, DOWN, RIGHT]
+  to_ALT: [Sft+TAB, TAB, '', '', '', F4, '', '', '', '', PgUp, '', '', '', '', '', '', '', '', '', PgDn, '', '', '', '', '', '', '', '', '', ↑, '', '', '', '', '',
+    '', '', ←, ↓, →]
 combos:
 - p: [36, 35]
   k: setting
