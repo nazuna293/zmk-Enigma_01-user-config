@@ -196,7 +196,7 @@
     combos {
         compatible = "zmk,combos";
 
-        mo_setting {
+        setting {
             bindings = <&mo 4>;
             key-positions = <36 35>;
         };
