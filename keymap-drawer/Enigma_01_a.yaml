@@ -206,7 +206,7 @@ layers:
   - ''
   - ''
   - '&bootloader'
-  - ''
+  - '&sys_reset'
   - ''
   - {type: held}
   - {type: held}
