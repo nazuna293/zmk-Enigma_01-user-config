@@ -11,7 +11,7 @@ parse_config:
 
   zmk_combos:
     esc:     {align: left}
-    lt_f2:     {align: top}
+    f2:     {align: top}
     cut:       {align: top}
 
   zmk_keycode_map:
