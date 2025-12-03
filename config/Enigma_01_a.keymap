@@ -164,33 +164,41 @@
             tap-ms = <20>;
         };
 
-        tp1: tab_ctrl_q {
+        td1: tab_ctrl_q {
             compatible = "zmk,behavior-tap-dance";
             label = "tab_ctrl_q";
             #binding-cells = <0>;
             bindings = <&mt LCTRL TAB>, <&kp Q>;
         };
 
-        tp3: f7_toALT_f8 {
+        td3: f7_toALT_f8 {
             compatible = "zmk,behavior-tap-dance";
             label = "f7_toALT_f8";
             #binding-cells = <0>;
             bindings = <&lt_to_0 5 F7>, <&kp F8>;
         };
 
-        tp2: hz_toALT {
+        td2: hz_toALT {
             compatible = "zmk,behavior-tap-dance";
             label = "hz_toALT";
             #binding-cells = <0>;
             bindings = <&lt_to_0 5 GRAVE>;
         };
 
-        tp5: coron_semicoron {
+        td4: coron_semicoron {
             compatible = "zmk,behavior-tap-dance";
             label = "coron_semicoron";
             #binding-cells = <0>;
             bindings = <&kp COLON>, <&kp SEMICOLON>;
         };
+
+        td5: slash_shift {
+            compatible = "zmk,behavior-tap-dance";
+            label = "coron_semicoron";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH>, <&kp RIGHT_SHIFT>;
+        };
+
     };
 
     combos {
@@ -210,11 +218,6 @@
             bindings = <&kp MINUS>;
             key-positions = <10 11>;
             layers = <0 1>;
-        };
-
-        RSft {
-            bindings = <&kp RIGHT_SHIFT>;
-            key-positions = <31 41>;
         };
 
         copy {
