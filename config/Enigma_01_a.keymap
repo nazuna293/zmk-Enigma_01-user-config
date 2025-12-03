@@ -171,18 +171,18 @@
             bindings = <&mt LCTRL TAB>, <&kp Q>;
         };
 
-        td3: f7_toALT_f8 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "f7_toALT_f8";
-            #binding-cells = <0>;
-            bindings = <&lt_to_0 5 F7>, <&kp F8>;
-        };
-
         td2: hz_toALT {
             compatible = "zmk,behavior-tap-dance";
             label = "hz_toALT";
             #binding-cells = <0>;
             bindings = <&lt_to_0 5 GRAVE>;
+        };
+
+        td3: f7_toALT_f8 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "f7_toALT_f8";
+            #binding-cells = <0>;
+            bindings = <&lt_to_0 5 F7>, <&kp F8>;
         };
 
         td4: coron_semicoron {
@@ -191,14 +191,6 @@
             #binding-cells = <0>;
             bindings = <&kp COLON>, <&kp SEMICOLON>;
         };
-
-        td5: slash_shift {
-            compatible = "zmk,behavior-tap-dance";
-            label = "coron_semicoron";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH>, <&kp RIGHT_SHIFT>;
-        };
-
     };
 
     combos {
@@ -292,10 +284,10 @@
 
         Default_JIS {
             bindings = <
-                &tp2          &tp3
-&tp1            &kp W         &kp E         &kp R        &kp T          &kp Y    &kp U        &kp I      &kp O     &kp P
-&kp A           &kp S         &kp D         &kp F        &kp G          &kp H    &kp J        &kp K      &kp L     &tp5
-&kp Z           &kp X         &kp C         &kp V        &kp B          &kp N    &kp M        &kp COMMA  &kp DOT   &kp SLASH
+                &td2          &td3
+&td1            &kp W         &kp E         &kp R        &kp T          &kp Y    &kp U        &kp I      &kp O     &kp P
+&kp A           &kp S         &kp D         &kp F        &kp G          &kp H    &kp J        &kp K      &kp L     &td4
+&kp Z           &kp X         &kp C         &kp V        &kp B          &kp N    &kp M        &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
 &kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 SPACE  &kp BACKSPACE  &kp DEL  &lt 3 ENTER  &sl_left   &sl_down  &sl_right
             >;
 
