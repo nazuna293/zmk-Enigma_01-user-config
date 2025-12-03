@@ -226,8 +226,6 @@ combos:
 - p: [10, 11]
   k: '-'
   l: [Default_JIS, Arrow]
-- p: [31, 41]
-  k: RIGHT SHIFT
 - p: [13, 14]
   k: Ctl+C
   l: [Default_JIS, Arrow, Ctrl+_Num_]
@@ -250,6 +248,7 @@ combos:
 - p: [0, 1]
   k: F2
   l: [Default_JIS, Ctrl+_Num_, Arrow, Shift+_Mouse_]
+  a: top
 - p: [10, 11]
   k: '-'
   l: [Ctrl+_Num_]
