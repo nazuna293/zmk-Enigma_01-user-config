@@ -99,20 +99,20 @@ layers:
   - KP 9
   - '-'
   - Prt Scn
-  - Ctl+A
-  - Ctl+S
-  - Ctl+D
-  - Ctl+F
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - KP 4
   - KP 5
   - KP 6
   - +
-  - Del
-  - Ctl+Z
-  - Ctl+X
-  - Ctl+C
-  - Ctl+V
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - KP 0
   - KP 1
   - KP 2
@@ -206,17 +206,17 @@ layers:
   - ''
   - ''
   - Boot
+  - ''
+  - ''
+  - {type: held}
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
   - Reset
-  - ''
-  - {type: held}
-  - {type: held}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   to_ALT: [Sft+TAB, TAB, '', '', '', F4, '', '', '', '', PgUp, '', '', '', '', '', '', '', '', '', PgDn, '', '', '', '', '', '', '', '', '', ↑, '', '', '', '', '',
-    '', '', '', ←, ↓, →]
+    '', '', ENTER, ←, ↓, →]
 combos:
 - p: [36, 35]
   k: setting
