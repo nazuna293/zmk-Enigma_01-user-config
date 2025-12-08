@@ -25,6 +25,11 @@ parse_config:
     LSHFT: Sft
     RSHFT: Sft
     BSPC: BS
+    LEFT_SHIFT: Sft
+    RIGHT_SHIFT: Sft
+    LEFT_WIN: Win
+    LEFT_ALT: Alt
+
 
     PAGE_UP: PgUp
     PAGE_DOWN: PgDn
