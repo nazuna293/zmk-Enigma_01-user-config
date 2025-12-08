@@ -309,8 +309,8 @@
         &trans  &trans
 &none   &none   &none   &none   &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS    &kp PRINTSCREEN
 &none   &none   &none   &none   &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS     &none
-&none   &none   &none   &none   &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp UP_ARROW    &kp KP_DOT
-&trans  &trans  &trans  &trans  &trans           &trans           &trans           &kp LEFT_APROW   &kp DOWN_ARROW  &kp RIGHT_ARROW
+&none   &none   &none   &none   &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp UP          &kp KP_DOT
+&trans  &trans  &trans  &trans  &trans           &trans           &trans           &kp LEFT         &kp DOWN        &kp RIGHT
             >;
 
             sensor-bindings = <&arrow_left_right>;
