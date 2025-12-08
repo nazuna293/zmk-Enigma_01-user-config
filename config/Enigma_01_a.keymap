@@ -47,28 +47,28 @@
             label = "MO_to_0";
         };
 
-        sl_left: sl_left {
+        left: left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_ARROW &sl 1>;
-            label = "LEFT";
+            label = "SL_LEFT";
         };
 
-        sl_down: sl_down {
+        down: down {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp DOWN_ARROW &sl 1>;
             label = "SL_DOWN";
         };
 
-        sl_right: sl_right {
+        right: right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RIGHT_ARROW &sl 1>;
             label = "SL_RIGHT";
         };
 
-        sl_up: sl_up {
+        up: up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp UP_ARROW &sl 1>;
@@ -288,7 +288,7 @@
 &td1            &kp W         &kp E         &kp R        &kp T          &kp Y    &kp U        &kp I      &kp O     &kp P
 &kp A           &kp S         &kp D         &kp F        &kp G          &kp H    &kp J        &kp K      &kp L     &td4
 &kp Z           &kp X         &kp C         &kp V        &kp B          &kp N    &kp M        &kp COMMA  &kp DOT   &mt RIGHT_SHIFT SLASH
-&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 SPACE  &kp BACKSPACE  &kp DEL  &lt 3 ENTER  &sl_left   &sl_down  &sl_right
+&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 SPACE  &kp BACKSPACE  &kp DEL  &lt 3 ENTER  &left   &down  &sright
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -299,8 +299,8 @@
         &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &sl_up    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &sl_left  &sl_down  &sl_right
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &up    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &left  &down  &right
             >;
         };
 
