@@ -117,7 +117,7 @@ layers:
   - KP 1
   - KP 2
   - KP 3
-  - UP ARROW
+  - ↑
   - .
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -126,9 +126,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT APROW
-  - DOWN ARROW
-  - RIGHT ARROW
+  - ←
+  - ↓
+  - →
   Shift+_Mouse_:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -220,6 +220,7 @@ layers:
 combos:
 - p: [36, 35]
   k: setting
+  draw_separate: true
 - p: [0, 2]
   k: ESC
   a: left
