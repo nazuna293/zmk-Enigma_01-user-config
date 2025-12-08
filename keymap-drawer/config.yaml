@@ -45,11 +45,6 @@ parse_config:
     LEFT: ←
     RIGHT: →
 
-    sl_up: ↑
-    sl_down: ↓
-    sl_left: ←
-    sl_right: →
-
     # defaults
     AMPERSAND: '&'
     AMPS: '&'
@@ -132,6 +127,7 @@ parse_config:
     TILDE2: '~'
     UNDER: _
     UNDERSCORE: _
+    INTERNATIONAL_1: _
 
 draw_config:
   footer_text: 'Enigma_01 KEYMAPS | Created with keymap-drawer' 
