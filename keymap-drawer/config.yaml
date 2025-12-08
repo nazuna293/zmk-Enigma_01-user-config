@@ -45,7 +45,11 @@ parse_config:
     LEFT: ←
     RIGHT: →
 
+    sl_up: ↑
+    sl_down: ↓
     sl_left: ←
+    sl_right: →
+
     # defaults
     AMPERSAND: '&'
     AMPS: '&'
