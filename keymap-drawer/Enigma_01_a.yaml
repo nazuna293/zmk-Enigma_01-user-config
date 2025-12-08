@@ -40,9 +40,9 @@ layers:
   - BS
   - DEL
   - {t: ENTER, h: Shift+_Mouse_}
-  - '&sl_left'
-  - '&sl_down'
-  - '&sl_right'
+  - '&left'
+  - '&down'
+  - '&sright'
   Arrow:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -74,7 +74,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&sl_up'
+  - '&up'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -83,9 +83,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&sl_left'
-  - '&sl_down'
-  - '&sl_right'
+  - '&left'
+  - '&down'
+  - '&right'
   Ctrl+_Num_:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
