@@ -32,10 +32,10 @@ layers:
   - M
   - ','
   - .
-  - {t: /, h: RIGHT SHIFT}
-  - LEFT SHIFT
-  - LEFT WIN
-  - LEFT ALT
+  - {t: /, h: Sft}
+  - Sft
+  - Win
+  - Alt
   - {t: SPACE, h: Ctrl+_Num_}
   - BS
   - DEL
@@ -126,7 +126,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ←
+  - LEFT APROW
   - DOWN ARROW
   - RIGHT ARROW
   Shift+_Mouse_:

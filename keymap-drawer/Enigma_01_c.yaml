@@ -34,8 +34,8 @@ layers:
   - .
   - /
   - '&tp2'
-  - LEFT WIN
-  - LEFT ALT
+  - Win
+  - Alt
   - {t: SPACE, h: Ctrl+_Num_}
   - BS
   - {t: ENTER, h: Shift+_Mouse_}
