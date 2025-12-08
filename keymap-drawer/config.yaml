@@ -13,6 +13,7 @@ parse_config:
     esc:     {align: left}
     f2:     {align: top}
     cut:       {align: top}
+    setting: {draw_separate: true}
 
   zmk_keycode_map:
     # custom mappings
