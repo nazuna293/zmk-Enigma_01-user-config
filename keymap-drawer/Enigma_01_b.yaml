@@ -41,7 +41,7 @@ layers:
   - {t: ENTER, h: Shift+_Mouse_}
   - Alt
   - '&tp2'
-  - Sft+INTERNATIONAL 1
+  - Sft+_
   Ctrl+_Num_:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

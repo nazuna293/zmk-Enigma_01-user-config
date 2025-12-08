@@ -42,7 +42,7 @@ layers:
   - {t: ENTER, h: Shift+_Mouse_}
   - '&left'
   - '&down'
-  - '&sright'
+  - '&right'
   Arrow:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -240,7 +240,7 @@ combos:
   k: Ctl+A
   l: [Default_JIS, Arrow, Ctrl+_Num_]
 - p: [31, 30]
-  k: INTERNATIONAL 1
+  k: _
   l: [Default_JIS, Arrow]
 - p: [20, 21]
   k: '@'
