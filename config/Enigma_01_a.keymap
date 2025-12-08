@@ -51,7 +51,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_ARROW &sl 1>;
-            label = "SL_LEFT";
+            label = "LEFT";
         };
 
         sl_down: sl_down {
