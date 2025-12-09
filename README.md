@@ -28,10 +28,10 @@
 ### Macro
 ||内容|
 |:-:|:-:|
-|up||
-|down||
-|left||
-|right||
+|up|上矢印 + キー1回押すまでDefault_ARROW|
+|down|下矢印 + キー1回押すまでDefault_ARROW|
+|left|左矢印 + キー1回押すまでDefault_ARROW|
+|right|右矢印 + キー1回押すまでDefault_ARROW|
 
 ※レイヤー4に推移している間はALTキーが押されている状態になっています。
 
