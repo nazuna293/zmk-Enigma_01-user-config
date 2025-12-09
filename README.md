@@ -25,6 +25,14 @@
 |tp3|F7|ALT layer|F8|
 |tp4|:||;|
 
+### Macro
+||内容|
+|:-:|:-:|
+|up||
+|down||
+|left||
+|right||
+
 ※レイヤー4に推移している間はALTキーが押されている状態になっています。
 
 ![](keymap-drawer/Enigma_01_a.svg)
