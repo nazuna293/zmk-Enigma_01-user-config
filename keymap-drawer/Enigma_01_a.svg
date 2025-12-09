@@ -124,8 +124,8 @@ path.combo {
 }
 /* End Tabler Icons Cleanup */
 </style>
-<g transform="translate(30, 0)" class="layer-Default_JIS">
-<text x="0" y="28" class="label" id="Default_JIS">Default_JIS:</text>
+<g transform="translate(30, 0)" class="layer-JIS">
+<text x="0" y="28" class="label" id="JIS">JIS:</text>
 <g transform="translate(0, 70)">
 <g transform="translate(84, 28)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -271,8 +271,8 @@ path.combo {
 <g transform="translate(196, 252)" class="key keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">SPACE</text>
-<a href="#Ctrl_Num_">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 70%">Ctrl+_Num_</tspan></text>
+<a href="#Tenkey_">
+<text x="0" y="24" class="key hold layer-activator">Tenkey_</text>
 </a></g>
 <g transform="translate(252, 252)" class="key keypos-36">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -285,8 +285,8 @@ path.combo {
 <g transform="translate(364, 252)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">ENTER</text>
-<a href="#Shift_Mouse_">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 64%">Shift+_Mou…</tspan></text>
+<a href="#Symbol_">
+<text x="0" y="24" class="key hold layer-activator">Symbol_</text>
 </a></g>
 <g transform="translate(420, 252)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -344,8 +344,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 350)" class="layer-Default_Arrow">
-<text x="0" y="28" class="label" id="Default_Arrow">Default_Arrow:</text>
+<g transform="translate(30, 350)" class="layer-Arrow">
+<text x="0" y="28" class="label" id="Arrow">Arrow:</text>
 <g transform="translate(0, 70)">
 <g transform="translate(84, 28)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -559,8 +559,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 700)" class="layer-Ctrl+_Num_">
-<text x="0" y="28" class="label" id="Ctrl_Num_">Ctrl+_Num_:</text>
+<g transform="translate(30, 700)" class="layer-Tenkey_">
+<text x="0" y="28" class="label" id="Tenkey_">Tenkey_:</text>
 <g transform="translate(0, 70)">
 <g transform="translate(84, 28)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -784,8 +784,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1050)" class="layer-Shift+_Mouse_">
-<text x="0" y="28" class="label" id="Shift_Mouse_">Shift+_Mouse_:</text>
+<g transform="translate(30, 1050)" class="layer-Symbol_">
+<text x="0" y="28" class="label" id="Symbol_">Symbol_:</text>
 <g transform="translate(0, 70)">
 <g transform="translate(84, 28)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
