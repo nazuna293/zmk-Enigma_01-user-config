@@ -18,12 +18,12 @@
 このリポジトリのキーマップの状態は[こちら](docs/keymap.md)で確認できます。
 
 ### Tap Dance
-|name|tap|hold|2tap|tap hold|
-|:-:|:-:|:-:|:-:|:-:|
-|tp1|Tab|Ctrl|Q||
-|tp2||Shift||Ctrl|
-|tp3|半／全|layer to_ALT|||
-|tp4|F7|layer to_ALT|F8||
+||1回押し|長押し|2回押し|
+|:-:|:-:|:-:|:-:|
+|tp1|Tab|Ctrl|Q|
+|tp2|半／全|&mo ALT||
+|tp3|F7|&mo ALT|F8|
+|tp4|:||;|
 
 ※レイヤー4に推移している間はALTキーが押されている状態になっています。
 
