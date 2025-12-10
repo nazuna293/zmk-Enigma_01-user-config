@@ -1,9 +1,9 @@
 layout: {zmk_keyboard: Enigma_01_b}
 layers:
   Default_JIS:
-  - '&tp3'
-  - '&tp4'
-  - '&tp1'
+  - '&td2'
+  - '&td3'
+  - '&td1'
   - W
   - E
   - R
@@ -22,7 +22,7 @@ layers:
   - J
   - K
   - L
-  - '-'
+  - '&td4'
   - Z
   - X
   - C
@@ -32,16 +32,58 @@ layers:
   - M
   - ','
   - .
-  - /
-  - '&tp2'
+  - {t: /, h: Sft}
+  - Sft
   - Win
   - Alt
   - {t: SPACE, h: Ctrl+_Num_}
   - BS
   - {t: ENTER, h: Shift+_Mouse_}
-  - Alt
-  - '&tp2'
-  - Sft+_
+  - '&sl_left'
+  - '&sl_down'
+  - '&sl_right'
+  Arrow:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&sl_up'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&sl_left'
+  - '&sl_down'
+  - '&sl_right'
   Ctrl+_Num_:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -55,20 +97,20 @@ layers:
   - KP 9
   - '-'
   - Prt Scn
-  - Ctl+A
-  - Ctl+S
-  - Ctl+D
-  - Ctl+F
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - KP 4
   - KP 5
   - KP 6
   - +
-  - Del
-  - Ctl+Z
-  - Ctl+X
-  - Ctl+C
-  - Ctl+V
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - KP 0
   - KP 1
   - KP 2
@@ -167,9 +209,51 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Reset
   to_ALT: [Sft+TAB, TAB, '', '', '', F4, '', '', '', '', PgUp, '', '', '', '', '', '', '', '', '', PgDn, '', '', '', '', '', '', '', '', '', ↑, '', '', '', '', '',
-    '', '', ←, ↓, →]
+    '', ENTER, ←, ↓, →]
 combos:
 - p: [36, 35]
   k: setting
+  draw_separate: true
+- p: [0, 2]
+  k: ESC
+  a: left
+- p: [10, 11]
+  k: '-'
+  l: [Default_JIS, Arrow]
+- p: [13, 14]
+  k: Ctl+C
+  l: [Default_JIS, Arrow, Ctrl+_Num_]
+- p: [15, 14]
+  k: Ctl+V
+  l: [Default_JIS, Arrow, Ctrl+_Num_]
+- p: [13, 15]
+  k: Ctl+X
+  l: [Default_JIS, Arrow, Ctrl+_Num_]
+  a: top
+- p: [12, 13]
+  k: Ctl+A
+  l: [Default_JIS, Arrow, Ctrl+_Num_]
+- p: [31, 30]
+  k: _
+  l: [Default_JIS, Arrow]
+- p: [20, 21]
+  k: '@'
+  l: [Default_JIS, Arrow]
+- p: [0, 1]
+  k: F2
+  l: [Default_JIS, Ctrl+_Num_, Arrow, Shift+_Mouse_]
+  a: top
+- p: [10, 11]
+  k: '-'
+  l: [Ctrl+_Num_]
+- p: [20, 21]
+  k: +
+  l: [Ctrl+_Num_]
+- p: [8, 9]
+  k: /
+  l: [Ctrl+_Num_]
+- p: [9, 10]
+  k: '*'
+  l: [Ctrl+_Num_]
