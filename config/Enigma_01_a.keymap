@@ -254,27 +254,15 @@
             layers = <0 2 1 3>;
         };
 
-        minus {
-            bindings = <&kp KP_MINUS>;
-            key-positions = <10 11>;
-            layers = <2>;
-        };
-
-        plus {
-            bindings = <&kp KP_PLUS>;
-            key-positions = <20 21>;
-            layers = <2>;
-        };
-
         slash {
             bindings = <&kp KP_SLASH>;
-            key-positions = <8 9>;
+            key-positions = <7 8>;
             layers = <2>;
         };
 
         asterisk {
             bindings = <&kp KP_ASTERISK>;
-            key-positions = <9 10>;
+            key-positions = <8 9>;
             layers = <2>;
         };
     };
