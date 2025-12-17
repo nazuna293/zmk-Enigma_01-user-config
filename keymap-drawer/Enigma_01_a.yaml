@@ -250,15 +250,9 @@ combos:
   k: F2
   l: [JIS, Tenkey_, Arrow, Symbol_]
   a: top
-- p: [10, 11]
-  k: '-'
-  l: [Tenkey_]
-- p: [20, 21]
-  k: +
-  l: [Tenkey_]
-- p: [8, 9]
+- p: [7, 8]
   k: /
   l: [Tenkey_]
-- p: [9, 10]
+- p: [8, 9]
   k: '*'
   l: [Tenkey_]
