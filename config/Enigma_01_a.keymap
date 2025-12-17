@@ -3,6 +3,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
+// Rotary Encoder
+
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 / {
@@ -124,46 +126,56 @@
             flavor = "balanced";
         };
 
-        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+
+        // Rotary Encoder
+
+        scroll_up_down: mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
 
-            tap-ms = <20>;
+            tap-ms = <50>;
         };
 
-        scroll_left_right: behavior_sensor_rotate_mouse_wheel_left_right {
+        // Rotary Encoder
+
+        scroll_left_right: mouse_wheel_left_right {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
 
-            tap-ms = <20>;
+            tap-ms = <50>;
         };
 
-        arrow_left_right: behavior_sensor_rotate_arrow_le {
+        // Rotary Encoder
+
+        arrow_left_right: arrow_left_right {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&kp LEFT>, <&kp RIGHT>;
 
-            tap-ms = <20>;
+            tap-ms = <50>;
         };
 
-        arrow_up_down: behavior_sensor_rotate_arrow_up {
+        // Rotary Encoder
+
+        arrow_up_down: arrow_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&kp UP>, <&kp DOWN>;
 
-            tap-ms = <20>;
+            tap-ms = <50>;
         };
 
-        page_up_down: behavior_sensor_rotate_page_up_ {
+        // Rotary Encoder
+
+        page_up_down: page_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&kp PAGE_UP>, <&kp PAGE_DOWN>;
 
-            tap-ms = <20>;
+            tap-ms = <50>;
         };
-
         td1: tab_ctrl_q {
             compatible = "zmk,behavior-tap-dance";
             label = "tab_ctrl_q";
