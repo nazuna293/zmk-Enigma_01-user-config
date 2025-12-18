@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: Enigma_01_b}
 layers:
-  Default_JIS:
+  JIS:
   - '&td2'
   - '&td3'
   - '&td1'
@@ -36,12 +36,12 @@ layers:
   - Sft
   - Win
   - Alt
-  - {t: SPACE, h: Ctrl+_Num_}
+  - {t: SPACE, h: Tenkey_}
   - BS
-  - {t: ENTER, h: Shift+_Mouse_}
-  - '&sl_left'
-  - '&sl_down'
-  - '&sl_right'
+  - {t: ENTER, h: Symbol_}
+  - '&left'
+  - '&down'
+  - '&right'
   Arrow:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -73,7 +73,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&sl_up'
+  - '&up'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -81,10 +81,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&sl_left'
-  - '&sl_down'
-  - '&sl_right'
-  Ctrl+_Num_:
+  - '&left'
+  - '&down'
+  - '&right'
+  Tenkey_:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
@@ -115,7 +115,7 @@ layers:
   - KP 1
   - KP 2
   - KP 3
-  - UP ARROW
+  - ↑
   - .
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -124,9 +124,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ←
-  - DOWN ARROW
-  - RIGHT ARROW
-  Shift+_Mouse_:
+  - ↓
+  - →
+  Symbol_:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Sft+1
@@ -221,39 +221,33 @@ combos:
   a: left
 - p: [10, 11]
   k: '-'
-  l: [Default_JIS, Arrow]
+  l: [JIS, Arrow]
 - p: [13, 14]
   k: Ctl+C
-  l: [Default_JIS, Arrow, Ctrl+_Num_]
+  l: [JIS, Arrow, Tenkey_]
 - p: [15, 14]
   k: Ctl+V
-  l: [Default_JIS, Arrow, Ctrl+_Num_]
+  l: [JIS, Arrow, Tenkey_]
 - p: [13, 15]
   k: Ctl+X
-  l: [Default_JIS, Arrow, Ctrl+_Num_]
+  l: [JIS, Arrow, Tenkey_]
   a: top
 - p: [12, 13]
   k: Ctl+A
-  l: [Default_JIS, Arrow, Ctrl+_Num_]
+  l: [JIS, Arrow, Tenkey_]
 - p: [31, 30]
   k: _
-  l: [Default_JIS, Arrow]
+  l: [JIS, Arrow]
 - p: [20, 21]
   k: '@'
-  l: [Default_JIS, Arrow]
+  l: [JIS, Arrow]
 - p: [0, 1]
   k: F2
-  l: [Default_JIS, Ctrl+_Num_, Arrow, Shift+_Mouse_]
+  l: [JIS, Tenkey_, Arrow, Symbol_]
   a: top
-- p: [10, 11]
-  k: '-'
-  l: [Ctrl+_Num_]
-- p: [20, 21]
-  k: +
-  l: [Ctrl+_Num_]
-- p: [8, 9]
+- p: [7, 8]
   k: /
-  l: [Ctrl+_Num_]
-- p: [9, 10]
+  l: [Tenkey_]
+- p: [8, 9]
   k: '*'
-  l: [Ctrl+_Num_]
+  l: [Tenkey_]
