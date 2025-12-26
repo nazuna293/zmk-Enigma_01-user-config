@@ -178,18 +178,6 @@
             tap-ms = <50>;
         };
 
-        up_sticky: up_sticky_ht {
-            compatible = "zmk,behavior-hold-tap";
-            label = "UP_STICKY_HT";
-            #binding-cells = <0>;
-
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-
-            bindings = <&kp UP &sl 1>;
-        };
-
         td1: tab_ctrl_q {
             compatible = "zmk,behavior-tap-dance";
             label = "tab_ctrl_q";
