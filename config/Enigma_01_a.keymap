@@ -187,7 +187,7 @@
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
 
-            bindings = <&kp UP>, <&sl 1>;
+            bindings = <&kp UP &sl 1>;
         };
 
         td1: tab_ctrl_q {
