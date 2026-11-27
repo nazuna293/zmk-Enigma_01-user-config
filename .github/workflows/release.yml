@@ -1,0 +1,47 @@
+# 配布用のファームを Releases に「下書き」で置く
+#
+# 使い方: 公式版は zmk-main ブランチ、DYA 版は dya ブランチの最新のコミットにタグを打って push する
+#   git tag official-v1.1.0 && git push origin official-v1.1.0
+#   git tag dya-v1.1.0      && git push origin dya-v1.1.0
+# → ビルドして、layout_a だけを Enigma_01_<official|dya>_layout_a.uf2 として下書きのリリースに置く
+#   （B・C は ZMK Studio／DYA Studio で物理配置を切り替える。必要な人は Actions の成果物から取れる）
+# 下書きなので、GitHub の画面で「Publish release」を押すまでは公開されない
+name: Release firmware (draft)
+
+on:
+  push:
+    tags:
+      - "official-v*"
+      - "dya-v*"
+
+jobs:
+  build:
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@4de313367288aad5aeaa1243890e40dc813f7008
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: firmware
+          path: firmware
+
+      - name: Create draft release (layout_a only)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          kind="${TAG%%-v*}"
+          if [ "$kind" = "dya" ]; then label="DYA 版（DYA Studio で同時押し・マクロも編集できる）"; else label="公式版（公式 ZMK）"; fi
+          dst="Enigma_01_${kind}_layout_a.uf2"
+          cp "firmware/Enigma_01 layout_a.uf2" "$dst"
+          cat > notes.md <<EOF
+          Enigma_01 のファームウェア：${label}
+
+          - 1.0u 配列（layout_a）のファームです。1.5u・2.0u 配列の方は、書き込んだあと ZMK Studio／DYA Studio で物理配置を切り替えてください
+          - 書き込み方は、ビルドガイドの「ファームウェアの書き込み」をご覧ください
+          EOF
+          gh release create "$TAG" "$dst" --repo "$GITHUB_REPOSITORY" --draft --title "Enigma_01 ${TAG}" --notes-file notes.md
