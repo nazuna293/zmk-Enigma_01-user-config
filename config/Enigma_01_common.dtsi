@@ -138,11 +138,11 @@
         };
 
         // エンコーダ: 回す向きごとにキー／スクロールを割り当てる
+        // sensor-rotate 系は display-name を受け付けない（ZMK の定義に無い）ので書かない
         enc_kp: enc_kp {
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
             bindings = <&kp>, <&kp>;
-            display-name = "Encoder Key";
         };
 
         enc_scroll: enc_scroll {
@@ -150,7 +150,6 @@
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
             tap-ms = <20>;
-            display-name = "Encoder Scroll";
         };
     };
 };
