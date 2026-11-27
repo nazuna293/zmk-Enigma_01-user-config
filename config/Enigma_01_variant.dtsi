@@ -5,4 +5,5 @@
  */
 #define COMBOS_BEGIN combos { compatible = "zmk,combos";
 #define COMBOS_END };
-#define COMBO(name, binding, positions, lays) name { bindings = <binding>; key-positions = <positions>; layers = <lays>; };
+// 引数名は本体の語（key-positions の positions など）と重ならない名前にする（重なると置き換わって壊れる）
+#define COMBO(_n, _b, _p, _l) _n { bindings = <_b>; key-positions = <_p>; layers = <_l>; };
