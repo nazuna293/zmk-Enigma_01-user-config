@@ -9,7 +9,7 @@
 3. Enigma_01を選択して接続します。
 <img src="img/ZS_02.jpg" alt="製品画像" style="width: 100%; max-width: 600px; height: auto;">
 <img src="img/ZS_03.jpg" alt="製品画像" style="width: 100%; max-width: 600px; height: auto;">
-4. 「ロックされている」と表示されたら、Enigma_01 で **B を押したまま、2段目の左から3つ目（studio_unlock）** を押してロックを解除します。
+4. 「ロックされている」と表示されたら、Enigma_01 で **B を押したまま、D の位置（studio_unlock）** を押してロックを解除します。
 
 ## キーマップの編集  
 1. ブラウザ上でレイアウトを選択します（1.0u／1.5u／2.0u。1.0u のファームを書き込んだ 1.5u・2.0u の人は、ここで自分の配列に切り替えます）。
