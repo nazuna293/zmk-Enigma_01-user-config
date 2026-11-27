@@ -1,0 +1,156 @@
+/*
+ * Enigma_01 の配布用キーマップ（3つの配列で共通の部分）
+ *
+ * - レイヤー・ビヘイビア・マクロ・US/JIS の設定をここに置く。配列ごとの .keymap はこのファイルを最初に読み込み、
+ *   レイヤーの並びと同時押しの位置だけを書く
+ * - US 配列のキーコードで書き、JIS 配列のパソコンでは layout-shift（v2）で合わせる（設定のレイヤーで切り替え。状態は保存される）
+ * - ZMK main（Zephyr 4.1）の書き方。label は使わず display-name を使う（ZMK の Keymap Upgrader の新しい名前）
+ */
+
+// スクロールの量は、ZMK 側の定義より前に決める（全部の include より前）
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 50
+
+#include <behaviors.dtsi>
+#include <layout_shift.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+
+// レイヤーの番号
+#define BASE  0
+#define NUM   1
+#define SYM   2
+#define MACRO 3
+#define SET   4
+#define ALT   5
+#define WIN   6
+
+// US/JIS の切り替えに、JIS の変換表を結び付ける
+&tog_ls_on { layout-maps = <&layout_shift_map_us_to_jis>; };
+&tog_ls_off { layout-maps = <&layout_shift_map_us_to_jis>; };
+
+/ {
+    macros {
+        // JIS 配列のパソコン用に切り替える／US に戻す（設定のレイヤー）
+        jis_on: jis_on {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &tog_ls_on>;
+            display-name = "JIS On";
+        };
+
+        jis_off: jis_off {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &tog_ls_off>;
+            display-name = "JIS Off";
+        };
+    };
+
+    behaviors {
+        // layout-shift: &kp を JIS に合わせる版に置き換える（元の key_press は original_key_press として残す）
+        original_key_press: original_key_press {
+            compatible = "zmk,behavior-key-press";
+            #binding-cells = <1>;
+            display-name = "Key Press (original)";
+        };
+
+        kp: key_press {
+            compatible = "zmk,behavior-layout-shift-key-press";
+            #binding-cells = <1>;
+            display-name = "Key Press";
+        };
+
+        // 押している間は Shift、タップで Caps Word
+        shift_caps: shift_caps {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&kp>, <&caps_word>;
+            tapping-term-ms = <200>;
+            display-name = "Shift / Caps Word";
+        };
+
+        // 押している間はレイヤー、タップでキー（JIS に合わせる &lt）
+        lt_kp: lt_kp {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&mo>, <&kp>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            display-name = "Layer / Key";
+        };
+
+        // 上の2キー: 押している間は Alt／Win のレイヤー（もう一方を押すと Alt+Tab／Win+Tab）、タップで F2/F4・F7/F8
+        // hold-tap を外側、タップダンスを内側にする（内側にすると同時押しで即ホールドにならない）
+        app_alt: app_alt {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&mo>, <&f2_f4>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            hold-trigger-key-positions = <0 1>;
+            display-name = "App Switch (Alt)";
+        };
+
+        app_win: app_win {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&mo>, <&f7_f8>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            hold-trigger-key-positions = <0 1>;
+            display-name = "App Switch (Win)";
+        };
+
+        f2_f4: f2_f4 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&kp F2>, <&kp F4>;
+            display-name = "F2 / F4";
+        };
+
+        f7_f8: f7_f8 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&kp F7>, <&kp F8>;
+            display-name = "F7 / F8";
+        };
+
+        // 1回で : 、2回で ;
+        colon_semi: colon_semi {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&kp COLON>, <&kp SEMICOLON>;
+            tapping-term-ms = <250>;
+            display-name = ": / ;";
+        };
+
+        // 1回で , 、2回で .
+        comma_dot: comma_dot {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp DOT>;
+            tapping-term-ms = <250>;
+            display-name = ", / .";
+        };
+
+        // エンコーダ: 回す向きごとにキー／スクロールを割り当てる
+        enc_kp: enc_kp {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+            display-name = "Encoder Key";
+        };
+
+        enc_scroll: enc_scroll {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+            tap-ms = <20>;
+            display-name = "Encoder Scroll";
+        };
+    };
+};
