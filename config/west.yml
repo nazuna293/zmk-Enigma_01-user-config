@@ -1,11 +1,28 @@
+# DYA 版: cormoran さんの ZMK（main の線、custom studio protocol）。DYA Studio で同時押し・マクロを画面から編集できる
+# シールド定義は取り込むだけ（シールド定義の west.yml の ZMK の指定＝公式 main は使わない）
 manifest:
   remotes:
+    - name: cormoran
+      url-base: https://github.com/cormoran
     - name: nazuna293
       url-base: https://github.com/nazuna293
+    - name: kot149
+      url-base: https://github.com/kot149
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
   projects:
+    - name: zmk
+      remote: cormoran
+      revision: 1fc72aaff7a42bd533c1f4c9b3f23c5317c745f4 # main+custom-studio-protocol（2026-07-22）
+      import: app/west.yml
     - name: zmk-keyboard-Enigma_01
       remote: nazuna293
       revision: zmk-main
-      import: config/west.yml
+    - name: zmk-layout-shift
+      remote: kot149
+      revision: v2
+    - name: zmk-rgbled-widget
+      remote: caksoylar
+      revision: main
   self:
     path: config
