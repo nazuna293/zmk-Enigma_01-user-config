@@ -19,6 +19,10 @@ manifest:
       remote: cormoran
       revision: d9490e7b5d41c516221d131241009e81740efcee
       import: true
+    - name: zmk-feature-runtime-macro # DYA Studio でマクロを作る（キーには &rmacro 番号 を割り当てる）
+      remote: cormoran
+      revision: 38530962eb7061b60efcb98e84585cfb1f0cb6de
+      import: true
     - name: zmk-keyboard-Enigma_01
       remote: nazuna293
       revision: zmk-main
