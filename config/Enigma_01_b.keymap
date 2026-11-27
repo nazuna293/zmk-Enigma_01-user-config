@@ -7,31 +7,31 @@
  */
 
 #include "Enigma_01_common.dtsi"
+#include "Enigma_01_variant.dtsi"
 
 #define POS_SPACE 35
 #define POS_BS    36
 #define POS_ENTER 37
 
 / {
-    combos {
-        compatible = "zmk,combos";
+    COMBOS_BEGIN
 
-        esc     { bindings = <&kp ESC>;          key-positions = <0 2>;              layers = <BASE>; };
-        q       { bindings = <&kp Q>;            key-positions = <2 3>;              layers = <BASE>; };
-        minus   { bindings = <&kp MINUS>;        key-positions = <9 10>;             layers = <BASE>; };
-        caret   { bindings = <&kp CARET>;        key-positions = <10 11>;            layers = <BASE>; };
-        del     { bindings = <&kp DEL>;          key-positions = <19 20>;            layers = <BASE NUM>; };
-        at      { bindings = <&kp AT_SIGN>;      key-positions = <20 21>;            layers = <BASE>; };
-        under   { bindings = <&kp UNDERSCORE>;   key-positions = <30 31>;            layers = <BASE>; };
-        ime_off { bindings = <&kp INT_MUHENKAN>; key-positions = <12 POS_SPACE>;     layers = <BASE>; };
-        ime_on  { bindings = <&kp INT_HENKAN>;   key-positions = <21 POS_ENTER>;     layers = <BASE>; };
-        macro   { bindings = <&mo MACRO>;        key-positions = <POS_BS POS_ENTER>; layers = <BASE>; };
+        COMBO(esc, &kp ESC, 0 2, BASE)
+        COMBO(q, &kp Q, 2 3, BASE)
+        COMBO(minus, &kp MINUS, 9 10, BASE)
+        COMBO(caret, &kp CARET, 10 11, BASE)
+        COMBO(del, &kp DEL, 19 20, BASE NUM)
+        COMBO(at, &kp AT_SIGN, 20 21, BASE)
+        COMBO(under, &kp UNDERSCORE, 30 31, BASE)
+        COMBO(ime_off, &kp INT_MUHENKAN, 12 POS_SPACE, BASE)
+        COMBO(ime_on, &kp INT_HENKAN, 21 POS_ENTER, BASE)
+        COMBO(macro, &mo MACRO, POS_BS POS_ENTER, BASE)
 
-        num_slash { bindings = <&kp KP_SLASH>;    key-positions = <8 9>;           layers = <NUM>; };
-        num_star  { bindings = <&kp KP_ASTERISK>; key-positions = <9 10>;          layers = <NUM>; };
-        num_equal { bindings = <&kp EQUAL>;       key-positions = <10 11>;         layers = <NUM>; };
-        num_enter { bindings = <&kp KP_ENTER>;    key-positions = <POS_ENTER 31>;  layers = <NUM>; };
-    };
+        COMBO(num_slash, &kp KP_SLASH, 8 9, NUM)
+        COMBO(num_star, &kp KP_ASTERISK, 9 10, NUM)
+        COMBO(num_equal, &kp EQUAL, 10 11, NUM)
+        COMBO(num_enter, &kp KP_ENTER, POS_ENTER 31, NUM)
+    COMBOS_END
 
     keymap {
         compatible = "zmk,keymap";
