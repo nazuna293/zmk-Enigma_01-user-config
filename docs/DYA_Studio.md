@@ -10,7 +10,7 @@ cormoran さんの [DYA Studio](https://studio.dya.cormoran.works) で、キー�
 ## 接続
 1. Chrome か Edge で [DYA Studio](https://studio.dya.cormoran.works) を開きます（iPhone・iPad は Bluefy というブラウザで Bluetooth 接続ができます）
 2. 「USB」を選んで、Enigma_01 のシリアルポートを選びます（Bluetooth でもつなげます）
-3. 「ロックされている」と表示されたら、Enigma_01 で **B を押したまま、2段目の左から3つ目（studio_unlock）** を押してロックを解除します
+3. 「ロックされている」と表示されたら、Enigma_01 で **B を押したまま、D の位置（studio_unlock）** を押してロックを解除します
 
 キーボードがなくても、「Demo」で画面を試せます。
 
