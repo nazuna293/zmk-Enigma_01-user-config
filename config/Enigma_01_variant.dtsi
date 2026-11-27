@@ -1,9 +1,10 @@
 /*
- * 版ごとに違う部分（公式版）: 同時押しを ZMK 標準の combos として作る
- * DYA 版のブランチでは、同じ名前のこのファイルが cormoran さんの runtime_combo_defaults に展開する
+ * 版ごとに違う部分（DYA 版）: 同時押しを cormoran さんの runtime combo の初期値として作る
+ * DYA Studio の画面から同時押しを編集できる。編集を消すと、ここに書いた初期値に戻る
+ * 公式版のブランチでは、同じ名前のこのファイルが ZMK 標準の combos に展開する
  * キーマップ（a/b/c）と Enigma_01_common.dtsi は、公式版と DYA 版で同じファイル
  */
-#define COMBOS_BEGIN combos { compatible = "zmk,combos";
+#define COMBOS_BEGIN runtime_combo_defaults { compatible = "cormoran,runtime-combo-defaults";
 #define COMBOS_END };
 // 引数名は本体の語（key-positions の positions など）と重ならない名前にする（重なると置き換わって壊れる）
-#define COMBO(_n, _b, _p, _l) _n { bindings = <_b>; key-positions = <_p>; layers = <_l>; };
+#define COMBO(_n, _b, _p, _l) _n { key-positions = <_p>; bindings = <_b>; layers = <_l>; display-name = #_n; };

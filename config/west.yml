@@ -15,6 +15,10 @@ manifest:
       remote: cormoran
       revision: 1fc72aaff7a42bd533c1f4c9b3f23c5317c745f4 # main+custom-studio-protocol（2026-07-22）
       import: app/west.yml
+    - name: zmk-feature-runtime-combo # DYA Studio で同時押しを編集（zmk-feature-custom-settings も取り込む）
+      remote: cormoran
+      revision: d9490e7b5d41c516221d131241009e81740efcee
+      import: true
     - name: zmk-keyboard-Enigma_01
       remote: nazuna293
       revision: zmk-main
