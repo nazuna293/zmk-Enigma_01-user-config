@@ -1,0 +1,9 @@
+/*
+ * 版ごとに違う部分（公式版）: 同時押しを ZMK 標準の combos として作る
+ * DYA 版のブランチでは、同じ名前のこのファイルが cormoran さんの runtime_combo_defaults に展開する
+ * キーマップ（a/b/c）と Enigma_01_common.dtsi は、公式版と DYA 版で同じファイル
+ */
+#define COMBOS_BEGIN combos { compatible = "zmk,combos";
+#define COMBOS_END };
+// 引数名は本体の語（key-positions の positions など）と重ならない名前にする（重なると置き換わって壊れる）
+#define COMBO(_n, _b, _p, _l) _n { bindings = <_b>; key-positions = <_p>; layers = <_l>; };
